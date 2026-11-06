@@ -94,6 +94,9 @@ h1, h2, h3 { text-wrap: balance; }
 .photo { width: 320px; flex-shrink: 0; }
 .photo img { display: block; width: 100%; height: auto; border-radius: 4px; }
 .photo a { display: inline-block; margin-top: 8px; font-family: var(--sans); font-size: 14px; }
+.photo .contact { margin: 16px 0 0; font-family: var(--sans); font-size: 15px; line-height: 1.7; }
+.photo .contact .label { min-width: 48px; }
+.photo .contact a { display: inline; margin: 0; font-size: inherit; }
 .intro .text { flex: 1; min-width: 0; }
 .subtitle { color: var(--muted); margin: 0 0 18px; font-size: 17px; }
 
@@ -177,9 +180,13 @@ footer.site {
   body { font-size: 16px; }
   header.site { margin-bottom: 24px; }
   .intro { flex-direction: column; gap: 18px; }
-  .photo { width: 200px; }
-  .contact { font-size: 16px; }
-  .contact .label { min-width: 52px; }
+  /* phones: photo, pronunciation link, bio, then CV / email */
+  .intro { gap: 0; }
+  .photo { display: contents; }
+  .photo img { width: 200px; order: 1; }
+  .photo > a { order: 2; }
+  .intro .text { order: 3; margin-top: 18px; }
+  .photo .contact { order: 4; margin-top: 0; font-size: 16px; }
   h1 { font-size: 26px; }
   h2 { font-size: 20px; margin-top: 32px; }
   .row { flex-direction: column; gap: 0; }
