@@ -92,6 +92,11 @@ h1, h2, h3 { text-wrap: balance; }
 /* The Chinese name is set in Kai (楷体), as on the old Google Site. These are
    system fonts (macOS, Windows, Taiwan), so nothing is downloaded. */
 .kai { font-family: "Kaiti SC", STKaiti, KaiTi, "楷体", BiauKai, "DFKai-SB", Kai, serif; font-weight: 700; }
+
+/* Short announcements on the homepage. Chinese has no italics, so the
+   Chinese page uses Kai instead, as the CV does for emphasis. */
+.news { font-style: italic; }
+body.zh .news { font-style: normal; font-family: "Kaiti SC", STKaiti, KaiTi, "楷体", BiauKai, "DFKai-SB", Kai, serif; }
 .muted { color: var(--muted); }
 .small { font-size: 15px; }
 
