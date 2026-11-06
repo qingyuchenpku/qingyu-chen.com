@@ -85,7 +85,7 @@ p { margin: 0 0 14px; }
    text-wrap: pretty covers current Chrome, Edge and Safari; the HTML also
    ties the last two words (or last two CJK characters) together, which
    covers every other browser. */
-p, li, blockquote, .meta, .extra, .title, .row span { text-wrap: pretty; }
+p, li, blockquote, .meta, .extra, .title, .desc, .row span { text-wrap: pretty; }
 h1, h2, h3 { text-wrap: balance; }
 .nw { white-space: nowrap; }
 
@@ -132,6 +132,7 @@ ul.plain li { margin: 6px 0; }
   margin-left: 6px;
   vertical-align: 2px;
 }
+.paper .desc { margin-top: 4px; font-size: 17px; }
 .paper .links { font-family: var(--sans); font-size: 14px; margin-top: 4px; }
 .paper .links a { margin-right: 14px; }
 .paper .status { font-style: italic; color: var(--muted); }
