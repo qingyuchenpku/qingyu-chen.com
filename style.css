@@ -110,6 +110,7 @@ body.zh .news { font-style: normal; font-family: "Kaiti SC", STKaiti, KaiTi, "це
 .photo .contact a { display: inline; margin: 0; font-size: inherit; }
 .intro .text { flex: 1; min-width: 0; }
 .subtitle { color: var(--muted); margin: 0 0 18px; font-size: 17px; }
+.subtitle + .news { margin: -10px 0 20px; font-size: 17px; }   /* sits with the subtitle as one block */
 
 .contact { list-style: none; padding: 0; margin: 18px 0 0; font-size: 17px; }
 .contact li { margin: 2px 0; }
