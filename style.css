@@ -55,6 +55,7 @@ header.site .wrap {
   padding-bottom: 14px;
 }
 .brand {
+  font-family: var(--serif);   /* same on the sans-serif Chinese page */
   font-size: 22px;
   color: var(--accent);
   font-variant: small-caps;
