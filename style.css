@@ -161,6 +161,10 @@ details .abstract {
   font-size: 17px;
   text-align: justify;
   hyphens: auto;
+  /* Plain wrapping here: text-wrap: pretty stops hyphenating near the end of
+     a paragraph, which leaves a very loose justified line. The last two
+     words are already tied together in the HTML. */
+  text-wrap: wrap;
 }
 .extra { font-size: 16px; color: var(--muted); margin-top: 6px; }
 .extra b { font-weight: 600; color: var(--ink); font-family: var(--sans); font-size: 13px; }
